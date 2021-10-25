@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+video {
+    width: 75%;
+    margin-top: 2em;
+}
+.video-container:hover .controls {
+    transform: translateY(-100%);
+    display:flex;
+}
+
+.controls {
+    display: none;
+    flex-direction: column;
+    position: relative;
+    bottom: 0;
+    width: 75%;
+    flex-wrap: wrap;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.buttons button {
+    background: none;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    width: 10%;
+    color: white;
+    padding: 10px;
+}
+
+.buttons button::before{
+    content: "►";
+}
+
+.buttons button.play:before {
+    content: "►";
+}
+
+.buttons button.pause:before {
+    content: "❚ ❚";
+}
+
+.progress-bar {
+    height: 10px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: gray;
+}
+
+.progress {
+    height: 10px;
+    background: purple;
+}
+
