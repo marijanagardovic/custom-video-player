@@ -1,6 +1,7 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@1,300&family=Manrope:wght@600;800&display=swap');*{
     margin: 0;
     padding: 0;
+    background: #fff0e6;
 }
 
 .container {
@@ -8,6 +9,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+h1 {
+    font-family: 'Chivo';
+    margin-top: 2em;
+    color: #b0826a;
 }
 
 .video-container {
@@ -34,6 +41,8 @@ video {
     bottom: 0;
     width: 75%;
     flex-wrap: wrap;
+    outline: none;
+    border-bottom: none;
     background: rgba(0, 0, 0, 0.3);
 }
 
@@ -43,7 +52,7 @@ video {
     cursor: pointer;
     border: none;
     width: 10%;
-    color: white;
+    color: #b0826a;
     padding: 10px;
 }
 
@@ -69,6 +78,6 @@ video {
 
 .progress {
     height: 10px;
-    background: purple;
+    background: #ffc299;
 }
 

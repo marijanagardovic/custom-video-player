@@ -16,3 +16,10 @@ function playPause() {
 
 playPauseBtn.addEventListener('click', playPause);
 
+//progress position
+
+video.addEventListener('timeupdate', function() {
+    var progPosition = video.currentTime / video.duration;
+    progress.style.width = progPosition * 100 + "%";
+})
+
