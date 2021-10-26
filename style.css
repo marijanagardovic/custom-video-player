@@ -87,3 +87,33 @@ video {
     display: none;
 }
 
+.volume-panel {
+    position: absolute;
+    left: 10%;
+    top: 40%;
+}
+
+[type="range"] {
+    background: transparent;
+    outline: none;
+}
+
+[type="range"],
+[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+
+[type="range"]::-webkit-slider-thumb {
+    background: #ffc299;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+[type="range"] {
+    appearance: none;
+    background: #ffc299;
+    border-radius: 7px;
+    height: 7px;
+}
