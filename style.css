@@ -15,7 +15,7 @@
 h1 {
     font-family: 'Chivo';
     margin-top: 2em;
-    color: #b0826a;
+    color: #5a5854;
 }
 
 .video-container {
@@ -63,7 +63,7 @@ video {
 
 .progress {
     height: 10px;
-    background: #ffc299;
+    background: #fb8a35;
 }
 
 .volume-control{
@@ -105,7 +105,7 @@ video {
 }
 
 [type="range"]::-webkit-slider-thumb {
-    background: #ffc299;
+    background: #fb8a35;
     width: 13px;
     height: 13px;
     border-radius: 50%;
@@ -114,7 +114,7 @@ video {
 
 [type="range"] {
     appearance: none;
-    background: #ffc299;
+    background: #fb8a35;
     border-radius: 7px;
     height: 7px;
 }
@@ -132,14 +132,14 @@ video {
 .settings-display {
     display: flex;
     position: absolute;
-    top: 25%;
+    top: 24%;
     right: 5%;
 }
 
 .full-screen-mode {
     display: flex;
     position: absolute;
-    top: 25%;
+    top: 24%;
     right: 1%;
 }
 
