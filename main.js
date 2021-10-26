@@ -14,6 +14,8 @@ const muted = document.querySelector('.mute-btn');
 
 const current = document.querySelector('.current-time');
 
+const progressBar = document.querySelector('.progress-bar');
+
 
 //play pause button
 
@@ -31,7 +33,7 @@ function playPause() {
 
 playPauseBtn.addEventListener('click', playPause);
 
-// mute video or unmuted
+// mute video or unmute
 
 function toggleMute () {
     video.muted = !video.muted;
@@ -84,3 +86,10 @@ function changeProgress () {
 }
 
 video.addEventListener('timeupdate', changeProgress);
+
+// change progress bar on click 
+
+progressBar.addEventListener('click', (e) =>{
+    const progressTime = (e.offsetX / progressBar.offsetWidth) * video.duration;
+    video.currentTime = progressTime;
+})
