@@ -28,5 +28,20 @@ function playPause() {
 
 playPauseBtn.addEventListener('click', playPause);
 
+// mute video or unmuted
 
-//volume 
+function toggleMute () {
+    video.muted = !video.muted;
+    if(video.muted) {
+        fullVolume.style.display = 'none';
+        muted.style.display = 'block';
+        volumeRange.value = 0;
+    } else {
+        volumeRange.value = video.volume * 100;
+        fullVolume.style.display = 'block';
+        muted.style.display = 'none';
+    }
+}
+
+volumeControl.addEventListener('click', toggleMute);
+
