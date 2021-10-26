@@ -71,7 +71,7 @@ function currentTime() {
     let currentMin = Math.floor(video.currentTime / 60);
     let currentSec = Math.floor(video.currentTime - currentMin * 60);
 
-    current.innerHTML =  `${currentMin}:${currentSec < 10 ? '0'+currentSec : currentSec}`;
+    current.innerHTML =  `${currentMin < 10 ? '0'+currentMin : currentMin}:${currentSec < 10 ? '0'+currentSec : currentSec}`;
 }
 
 video.addEventListener('timeupdate', currentTime);
