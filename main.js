@@ -3,6 +3,7 @@ const progress = document.querySelector('.progress');
 const playPauseBtn = document.querySelector('.buttons');
 const playBtn = document.querySelector('.play-btn');
 const pauseBtn = document.querySelector('.pause-btn');
+
 const volumeControl = document.querySelector('.volume-control');
 const volumePanel = document.querySelector('.volume-panel');
 const volumeRange = document.querySelector('input');
