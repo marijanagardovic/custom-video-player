@@ -117,3 +117,27 @@ video {
     border-radius: 7px;
     height: 7px;
 }
+
+.time-display {
+    position: absolute;
+    left: 25%;
+    top: 43%;
+}
+
+.time-display span {
+    color: white;
+}
+
+.settings-display {
+    display: flex;
+    position: absolute;
+    top: 25%;
+    right: 5%;
+}
+
+.full-screen-mode {
+    display: flex;
+    position: absolute;
+    top: 25%;
+    right: 1%;
+}
