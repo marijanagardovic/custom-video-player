@@ -1,6 +1,6 @@
 const video = document.querySelector('#my-video');
 const progress = document.querySelector('.progress');
-const playPauseBtn = document.querySelector('#play-pause');
+const playPauseBtn = document.querySelector('.buttons');
 const playBtn = document.querySelector('.play-btn');
 const pauseBtn = document.querySelector('.pause-btn');
 
