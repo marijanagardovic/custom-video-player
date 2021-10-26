@@ -12,6 +12,8 @@ const volumeBtn = document.querySelector('.volume-btn');
 const fullVolume = document.querySelector('.volume-btn');
 const muted = document.querySelector('.mute-btn');
 
+const current = document.querySelector('.current-time');
+
 
 //play pause button
 
@@ -62,3 +64,14 @@ function volumeInput(e) {
 }
 
 volumeRange.addEventListener('input', volumeInput);
+
+//duration time
+
+function currentTime() {
+    let currentMin = Math.floor(video.currentTime / 60);
+    let currentSec = Math.floor(video.currentTime - currentMin * 60);
+
+    current.innerHTML =  `${currentMin}:${currentSec < 10 ? '0'+currentSec : currentSec}`;
+}
+
+video.addEventListener('timeupdate', currentTime);
