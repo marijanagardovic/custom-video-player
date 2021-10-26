@@ -1,25 +1,24 @@
 const video = document.querySelector('#my-video');
 const progress = document.querySelector('.progress');
 const playPauseBtn = document.querySelector('#play-pause');
+const playBtn = document.querySelector('.play-btn');
+const pauseBtn = document.querySelector('.pause-btn');
 
 //play pause button
 
 function playPause() {
     if(video.paused) {
-        playPauseBtn.className = 'pause';
+        playBtn.style.display = 'block';
+        pauseBtn.style.display = 'none';
         video.play();
     } else {
-        playPauseBtn.className = 'play';
+        playBtn.style.display = 'none';
+        pauseBtn.style.display = 'block';
         video.pause();
     }
 }
 
-playPauseBtn.addEventListener('click', playPause);
+playBtn.addEventListener('click', playPause);
 
-//progress position
 
-video.addEventListener('timeupdate', function() {
-    var progPosition = video.currentTime / video.duration;
-    progress.style.width = progPosition * 100 + "%";
-})
 
