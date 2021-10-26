@@ -6,7 +6,6 @@ const playBtn = document.querySelector('.play-btn');
 const pauseBtn = document.querySelector('.pause-btn');
 
 const volumeControl = document.querySelector('.volume-control');
-const volumePanel = document.querySelector('.volume-panel');
 const volumeRange = document.querySelector('input');
 const volumeProgress = document.querySelector('.volume-progress');
 const volumeBtn = document.querySelector('.volume-btn');
@@ -61,7 +60,7 @@ volumeControl.addEventListener('click', toggleMute);
 
 // function for progress of volume
 
-function volumeInput(e) {
+function volumeInput() {
     video.volume = volumeRange.value / 100;
 
     if(volumeRange.value == 0) {
