@@ -159,3 +159,64 @@ video {
 .display-speed {
     display: none;
 } 
+
+@media (max-width: 1444px) {
+    .time-display {
+        left: 50%;
+    }
+
+    .volume-control {
+        left: 10%;
+    }
+
+    .volume-panel {
+        left: 18%;
+    }
+
+    .settings-display {
+        right: 10%;
+    }
+
+    .full-screen-mode {
+        right: 3%;
+    }
+}
+
+@media (max-width: 623px) {
+    .controls {
+        height: 70px;
+    }
+
+    .volume-control {
+        left:0;
+        top: 50%;
+    }
+
+    .volume-panel {
+        left: 10%;
+        top: 62%;
+    }
+
+    .time-display {
+        left: 10%;
+        top: 30%; 
+    }
+
+    .settings-display {
+        right: 18%;
+    }
+}
+
+@media (max-width: 430px) {
+    .time-display {
+        left: 17%;
+    }
+
+    .volume-panel {
+        left: 17%;
+    }
+
+    .settings-display , .full-screen-mode {
+        top: 30%;
+    }
+}
