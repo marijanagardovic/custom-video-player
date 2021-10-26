@@ -3,7 +3,6 @@
 * {  
     margin: 0;
     padding: 0;
-    /* background: #fff0e6;  */
 }
 
 .container {
@@ -120,7 +119,7 @@ video {
 
 .time-display {
     position: absolute;
-    left: 25%;
+    left: 27%;
     top: 43%;
 }
 
