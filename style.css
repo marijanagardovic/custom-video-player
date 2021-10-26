@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@1,300&family=Manrope:wght@600;800&display=swap');*{
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@1,300&family=Manrope:wght@600;800&display=swap');
+
+* {  
     margin: 0;
     padding: 0;
-    background: #fff0e6;
+    /* background: #fff0e6;  */
 }
 
 .container {
@@ -46,28 +48,6 @@ video {
     background: rgba(0, 0, 0, 0.3);
 }
 
-.buttons button {
-    background: none;
-    outline: none;
-    cursor: pointer;
-    border: none;
-    width: 10%;
-    color: #b0826a;
-    padding: 10px;
-}
-
-.buttons button::before{
-    content: "►";
-}
-
-.buttons button.play:before {
-    content: "►";
-}
-
-.buttons button.pause:before {
-    content: "❚ ❚";
-}
-
 .progress-bar {
     height: 10px;
     top: 0;
@@ -79,5 +59,23 @@ video {
 .progress {
     height: 10px;
     background: #ffc299;
+}
+
+.volume-control{
+    display: flex;
+    position: absolute;
+    left: 7%;
+    top: 21%;
+}
+
+.img {
+    width: 22px;
+    height: 22px;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+.pause-btn {
+    display: none;
 }
 
