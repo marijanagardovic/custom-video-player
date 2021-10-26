@@ -1,3 +1,4 @@
+const videoContainer = document.querySelector('.video-container');
 const video = document.querySelector('#my-video');
 const progress = document.querySelector('.progress');
 const playPauseBtn = document.querySelector('.buttons');
@@ -13,8 +14,8 @@ const fullVolume = document.querySelector('.volume-btn');
 const muted = document.querySelector('.mute-btn');
 
 const current = document.querySelector('.current-time');
-
 const progressBar = document.querySelector('.progress-bar');
+const fullMode = document.querySelector('.maximize');
 
 
 //play pause button
@@ -93,3 +94,15 @@ progressBar.addEventListener('click', (e) =>{
     const progressTime = (e.offsetX / progressBar.offsetWidth) * video.duration;
     video.currentTime = progressTime;
 })
+
+// fullscreen mode
+
+function changeMode () {
+    if(!document.fullscreenElement) {
+        videoContainer.requestFullscreen();
+    } else {
+        videoContainer.exitFullScreen();
+    }
+}
+
+fullMode.addEventListener('click', changeMode);
