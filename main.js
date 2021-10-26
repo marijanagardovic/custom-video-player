@@ -17,12 +17,12 @@ const muted = document.querySelector('.mute-btn');
 function playPause() {
     if(video.paused) {
         video.play();
-        playBtn.style.display = 'block';
-        pauseBtn.style.display = 'none';
-    } else {
-        video.pause();
         playBtn.style.display = 'none';
         pauseBtn.style.display = 'block';
+    } else {
+        video.pause();
+        playBtn.style.display = 'block';
+        pauseBtn.style.display = 'none';
     }
 }
 
