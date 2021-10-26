@@ -1,4 +1,4 @@
-const videoContainer = document.querySelector('.video-container');
+const videoContainer = document.querySelector('.container');
 const video = document.querySelector('#my-video');
 const progress = document.querySelector('.progress');
 const playPauseBtn = document.querySelector('.buttons');
@@ -16,6 +16,14 @@ const muted = document.querySelector('.mute-btn');
 const current = document.querySelector('.current-time');
 const progressBar = document.querySelector('.progress-bar');
 const fullMode = document.querySelector('.maximize');
+const settingsBtn = document.querySelector('.settings');
+
+const displaySpeed = document.querySelector('.display-speed');
+const speedOne = document.querySelector('.first-speed');
+const speedTwo = document.querySelector('.second-speed');
+const speedNormal = document.querySelector('.normal-speed');
+const speedThree = document.querySelector('.third-speed');
+const speedFour = document.querySelector('.fourth-speed');
 
 
 //play pause button
@@ -106,3 +114,29 @@ function changeMode () {
 }
 
 fullMode.addEventListener('click', changeMode);
+
+//setings for video speed
+
+settingsBtn.addEventListener('click', () => {
+    displaySpeed.classList.toggle('active');
+})
+
+speedOne.addEventListener('click', () => {
+    video.playbackRate = 0.5;
+})
+
+speedTwo.addEventListener('click', () => {
+    video.playbackRate = 0.75;
+})
+
+speedThree.addEventListener('click', () => {
+    video.playbackRate = 1.75;
+})
+
+speedFour.addEventListener('click', () => {
+    video.playbackRate = 2.0;
+})
+
+speedNormal.addEventListener('click', () => {
+    video.playbackRate = 1.0;
+})
