@@ -12,6 +12,7 @@ const volumeBtn = document.querySelector('.volume-btn');
 const fullVolume = document.querySelector('.volume-btn');
 const muted = document.querySelector('.mute-btn');
 
+
 //play pause button
 
 function playPause() {
@@ -45,3 +46,19 @@ function toggleMute () {
 
 volumeControl.addEventListener('click', toggleMute);
 
+// function for progress of volume
+
+function volumeInput(e) {
+    video.volume = volumeRange.value / 100;
+
+    if(volumeRange.value == 0) {
+        fullVolume.style.display = 'none';
+        muted.style.display = 'block';
+    } else {
+        video.muted = false;
+        fullVolume.style.display = 'block';
+        muted.style.display = 'none';
+    }
+}
+
+volumeRange.addEventListener('input', volumeInput);
