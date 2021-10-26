@@ -48,6 +48,10 @@ video {
     background: rgba(0, 0, 0, 0.3);
 }
 
+.buttons {
+    cursor: pointer;
+}
+
 .progress-bar {
     height: 10px;
     top: 0;
@@ -76,6 +80,10 @@ video {
 }
 
 .pause-btn {
+    display: none;
+}
+
+.mute-btn {
     display: none;
 }
 

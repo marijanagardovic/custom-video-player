@@ -8,17 +8,17 @@ const pauseBtn = document.querySelector('.pause-btn');
 
 function playPause() {
     if(video.paused) {
+        video.play();
         playBtn.style.display = 'block';
         pauseBtn.style.display = 'none';
-        video.play();
     } else {
+        video.pause();
         playBtn.style.display = 'none';
         pauseBtn.style.display = 'block';
-        video.pause();
     }
 }
 
-playBtn.addEventListener('click', playPause);
+playPauseBtn.addEventListener('click', playPause);
 
 
 
