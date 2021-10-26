@@ -141,3 +141,19 @@ video {
     top: 25%;
     right: 1%;
 }
+
+.display-speed {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    transform: translateY(-120%);
+}
+
+.speed {
+    color: white;
+    cursor: pointer;
+}
+
+.display-speed {
+    display: none;
+}
