@@ -75,3 +75,12 @@ function currentTime() {
 }
 
 video.addEventListener('timeupdate', currentTime);
+
+// progress width change
+
+function changeProgress () {
+    const percentage = (video.currentTime / video.duration) * 100;
+    progress.style.width = `${percentage}%`;
+}
+
+video.addEventListener('timeupdate', changeProgress);
