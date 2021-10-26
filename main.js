@@ -3,6 +3,13 @@ const progress = document.querySelector('.progress');
 const playPauseBtn = document.querySelector('.buttons');
 const playBtn = document.querySelector('.play-btn');
 const pauseBtn = document.querySelector('.pause-btn');
+const volumeControl = document.querySelector('.volume-control');
+const volumePanel = document.querySelector('.volume-panel');
+const volumeRange = document.querySelector('input');
+const volumeProgress = document.querySelector('.volume-progress');
+const volumeBtn = document.querySelector('.volume-btn');
+const fullVolume = document.querySelector('.volume-btn');
+const muted = document.querySelector('.mute-btn');
 
 //play pause button
 
@@ -21,4 +28,4 @@ function playPause() {
 playPauseBtn.addEventListener('click', playPause);
 
 
-
+//volume 
